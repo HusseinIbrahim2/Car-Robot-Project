@@ -1,0 +1,22 @@
+17:45:52 **** Incremental Build of configuration Debug for project nucleoF411_getting_started ****
+make all 
+arm-none-eabi-gcc "../src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DNUCLEO_F411RE -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -c -I"F:/ENIB STUDY/S6O/projet-robot/WORKSPACE_F411_DXL_STM32CUBEIDE/nucleoF411_getting_started/HAL_Driver/Inc/Legacy" -I"F:/ENIB STUDY/S6O/projet-robot/WORKSPACE_F411_DXL_STM32CUBEIDE/nucleoF411_getting_started/Utilities/STM32F4xx-Nucleo" -I"F:/ENIB STUDY/S6O/projet-robot/WORKSPACE_F411_DXL_STM32CUBEIDE/nucleoF411_getting_started/inc" -I"F:/ENIB STUDY/S6O/projet-robot/WORKSPACE_F411_DXL_STM32CUBEIDE/nucleoF411_getting_started/CMSIS/device" -I"F:/ENIB STUDY/S6O/projet-robot/WORKSPACE_F411_DXL_STM32CUBEIDE/nucleoF411_getting_started/CMSIS/core" -I"F:/ENIB STUDY/S6O/projet-robot/WORKSPACE_F411_DXL_STM32CUBEIDE/nucleoF411_getting_started/HAL_Driver/Inc" -O0 -ffunction-sections -Wall -fcommon -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/main.d" -MT"src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "src/main.o"
+arm-none-eabi-gcc "../src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F411RETx -DNUCLEO_F411RE -DDEBUG -DSTM32F411xE -DUSE_HAL_DRIVER -c -I"F:/ENIB STUDY/S6O/projet-robot/WORKSPACE_F411_DXL_STM32CUBEIDE/nucleoF411_getting_started/HAL_Driver/Inc/Legacy" -I"F:/ENIB STUDY/S6O/projet-robot/WORKSPACE_F411_DXL_STM32CUBEIDE/nucleoF411_getting_started/Utilities/STM32F4xx-Nucleo" -I"F:/ENIB STUDY/S6O/projet-robot/WORKSPACE_F411_DXL_STM32CUBEIDE/nucleoF411_getting_started/inc" -I"F:/ENIB STUDY/S6O/projet-robot/WORKSPACE_F411_DXL_STM32CUBEIDE/nucleoF411_getting_started/CMSIS/device" -I"F:/ENIB STUDY/S6O/projet-robot/WORKSPACE_F411_DXL_STM32CUBEIDE/nucleoF411_getting_started/CMSIS/core" -I"F:/ENIB STUDY/S6O/projet-robot/WORKSPACE_F411_DXL_STM32CUBEIDE/nucleoF411_getting_started/HAL_Driver/Inc" -O0 -ffunction-sections -Wall -fcommon -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/stm32f4xx_hal_msp.d" -MT"src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc -o "nucleoF411_getting_started.elf" @"objects.list"   -mcpu=cortex-m4 -T"F:\ENIB STUDY\S6O\projet-robot\WORKSPACE_F411_DXL_STM32CUBEIDE\nucleoF411_getting_started\LinkerScript.ld" --specs=nosys.specs -Wl,-Map="nucleoF411_getting_started.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+F:/Programs/STM32CubeIDE_1.15.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.win32_1.0.100.202403111256/tools/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/bin/ld.exe: warning: nucleoF411_getting_started.elf has a LOAD segment with RWX permissions
+Finished building target: nucleoF411_getting_started.elf
+ 
+arm-none-eabi-size  nucleoF411_getting_started.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23308	     40	   2488	  25836	   64ec	nucleoF411_getting_started.elf
+Finished building: default.size.stdout
+ 
+arm-none-eabi-objdump -h -S nucleoF411_getting_started.elf  > "nucleoF411_getting_started.list"
+Finished building: nucleoF411_getting_started.list
+ 
+arm-none-eabi-objcopy  -O binary nucleoF411_getting_started.elf  "nucleoF411_getting_started.bin"
+Finished building: nucleoF411_getting_started.bin
+ 
+
+17:46:07 Build Finished. 0 errors, 1 warnings. (took 14s.767ms)
+

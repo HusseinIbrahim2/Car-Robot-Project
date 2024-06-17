@@ -1,0 +1,16 @@
+../src/drv/drv_uart.c:27:6:uart1_Init	8	static
+../src/drv/drv_uart.c:46:6:uart2_Init	8	static
+../src/drv/drv_uart.c:66:6:uart6_Init	8	static
+../src/drv/drv_uart.c:87:6:uart_Write	16	static
+../src/drv/drv_uart.c:99:5:put_char	16	static
+../src/drv/drv_uart.c:109:5:put_char1	16	static
+../src/drv/drv_uart.c:115:5:putchar_stlink	16	static
+../src/drv/drv_uart.c:121:5:putchar_zigbee	16	static
+../src/drv/drv_uart.c:131:6:HAL_UART_RxCpltCallback	16	static
+../src/drv/drv_uart.c:165:6:put_string	16	static
+../src/drv/drv_uart.c:174:6:put_string_stlink	16	static
+../src/drv/drv_uart.c:183:6:put_string_zigbee	16	static
+../src/drv/drv_uart.c:192:6:sendFrame	16	static
+../src/drv/drv_uart.c:200:6:term_printf	160	static
+../src/drv/drv_uart.c:302:6:term_printf_stlink	136	static
+../src/drv/drv_uart.c:400:6:term_printf_zigbee	136	static
